@@ -105,8 +105,8 @@ const ActionsheetContent = (
   ref?: any
 ) => {
   // return null;
-  const { handleClose } = React.useContext(ModalContext);
-  const { hideDragIndicator } = React.useContext(ActionSheetContext);
+  // const { handleClose } = React.useContext(ModalContext);
+  const { hideDragIndicator, handleClose } = React.useContext(ActionSheetContext);
   const pan = React.useRef(new Animated.ValueXY()).current;
   const sheetHeight = React.useRef(0);
 
